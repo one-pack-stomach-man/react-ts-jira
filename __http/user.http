@@ -1,0 +1,23 @@
+@url = http://localhost:3003
+###
+
+GET {{url}}/users
+
+###
+
+POST {{url}}/users
+content-type: application/json
+
+{
+    "id": 2,
+    "name": "jack"
+}
+
+###
+PUT http://localhost:3003/users
+content-type: application/json
+
+{
+    "id": 1,
+    "name": "jack"
+}

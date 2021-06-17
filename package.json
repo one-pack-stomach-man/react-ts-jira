@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "startdb": "json-server --watch __json_server/db.json --port 3003"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +47,7 @@
   "devDependencies": {
     "eslint-config-prettier": "^8.3.0",
     "husky": "^6.0.0",
+    "json-server": "^0.16.3",
     "lint-staged": ">=10",
     "prettier": "2.3.1",
     "pretty-quick": "^3.1.0"
