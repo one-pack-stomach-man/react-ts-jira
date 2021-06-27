@@ -34,7 +34,7 @@ export const useMount = (cb: () => void) => {
 //     }, timeout)
 // }
 
-export const useDebounce = (value: any, timeout?:number) => {
+export const useDebounce = <T>(value: T, timeout?:number) => {
 
     const [debouncedValue, setDebouncedValue] = useState(value);
 
