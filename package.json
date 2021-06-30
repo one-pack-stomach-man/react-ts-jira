@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "startdb": "json-server --watch __json_server/db.json --port 3003"
+    "startdb": "json-server --watch __json_server/db.json --port 3003 --middlewares __json_server/middle.js"
   },
   "eslintConfig": {
     "extends": [
